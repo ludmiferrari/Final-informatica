@@ -1,0 +1,85 @@
+/* 1. Estilos Globales, Fondo y navegacion*/
+html, body {
+    height: 100%; 
+}
+
+.musicafondo{
+    background-image: url(/img/musicafondo.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+    min-height: 100vh; 
+}
+
+.fondoabout{
+    background-image: url(/img/fondoabout.png);
+
+}
+
+.fanartfondo{
+    background-image: url(/img/fanartfondo.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+    min-height: 100vh; 
+}
+
+.fondo-imagen{
+    background-image: url(/img/tv4.png);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+    min-height: 100vh; 
+}
+@media (max-width: 430px) {
+    .fondo-imagen {
+        background-image: url(/img/tv5.png);
+    
+    }
+}
+
+.contactofondo {
+    background-image: url(/img/ffondo.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+    min-height: 100vh;
+}
+
+
+
+
+/*iframe width*/
+
+.colaboraciones-spotify iframe{
+    width: 100%;
+}
+
+/* GALERIA DE FOTOS --------------------------------------------------------------*/
+.album-img {
+    max-width: 50%;
+    height: auto;
+
+}
+
+.galeria-miniatura {
+    display: block; 
+    height: 300px; 
+    overflow: hidden; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.galeria-miniatura img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.3s ease-in-out;
+}
+
+.galeria-miniatura:hover img {
+    transform: scale(1.05);
+}
