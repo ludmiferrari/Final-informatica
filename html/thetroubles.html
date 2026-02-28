@@ -3,142 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/venobox/venobox.min.css" type="text/css" media="screen" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Home</title>
+    <title>The Troubles</title>
 </head>
-<body class="fondothetroubles">
+<body class="bg-black d-flex flex-column min-vh-100">
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-        <div class="container">
-            <a  class="navbar-brand"></a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <div class="container">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-            </button>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto"> 
-                <li class="nav-item">
-                <a class="nav-link btn btn-primary text-white ms-lg-3" href="index.html">Inicio</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-center align-items-center">
+                
+                <li class="nav-item mb-2 mb-lg-0">
+                    <a class="nav-link btn btn-dark text-white ms-lg-3" href="index.html">Inicio</a>
                 </li>
-                <li class="nav-item">
-                <a class="nav-link btn btn-primary text-white ms-lg-3" href="playlist.html">Playlist</a>
+                
+                <li class="nav-item mb-2 mb-lg-0">
+                    <a class="nav-link btn btn-dark text-white ms-lg-3" href="playlist.html">Playlist</a>
                 </li>
-                <li class="nav-item">
-                <a class="nav-link btn btn-primary text-white ms-lg-3" href="thetroubles.html">The troubles</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link btn btn-primary text-white ms-lg-3" href="fanart.html">Fanart</a>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link btn btn-primary text-white ms-lg-3" href="galeria.html"></a>
+                
+                <li class="nav-item mb-2 mb-lg-0">
+                    <a class="nav-link btn btn-dark text-white ms-lg-3" href="capitulos.html">capitulos</a>
                 </li>
 
-                <li class="nav-item">
-                <a class="nav-link btn btn-primary text-white ms-lg-3" href="fanart.html">Fan Art</a>
+                <li class="nav-item mb-2 mb-lg-0">
+                    <a class="nav-link btn btn-dark text-white ms-lg-3" href="trivia.html">trivia</a>
                 </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle btn btn-primary text-white ms-lg-3" 
-                    href="musica.html" 
-                    id="navbarDropdownProyectos" 
-                    role="button" 
-                    data-bs-toggle="dropdown" 
-                    >
-                        musica
-                    </a>
-                    
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownProyectos">
-
-                        <li><a class="dropdown-item" href="musica.html"></a></li>
-                        
-                        <li><a class="dropdown-item" href="colaboraciones.html"></a></li>
-                        
-                        <li><a class="dropdown-item" href="listeningparty.html"></a></li>
-                        
-                    </ul>
+                <li class="nav-item mb-2 mb-lg-0">
+                    <a class="nav-link btn btn-dark text-white ms-lg-3" href="premios.html">premios</a>
                 </li>
-            </ul>
-            </div>
-        </div>
-    </nav>
 
-<div class="container my-5d">
-    <div class="row  text-center p-5 my-5d bg-white">
+                <li class="nav-item dropdown ms-lg-3">
+                    <div class="btn-group:hover btn-dark ">
+                        <a href="personajes.html" class="btn btn-black text-white">
+                            personajes
+                        </a>
+                        <button type="button" 
+                                class="btn btn-black text-white dropdown-toggle dropdown-toggle-split" 
+                                data-bs-toggle="dropdown" 
+                                aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
 
+                        <ul class="dropdown-menu dropdown-menu-dark text-center text-lg-start">
+                            <li><a class="dropdown-item" href="principales.html">Protagonistas</a></li>
+                            <li><a class="dropdown-item" href="recurrentes.html">Recurrentes</a></li>
+                            <li><a class="dropdown-item" href="elenco.html">Elenco</a></li>
+                            <li><a class="dropdown-item" href="fanart.html">fanart</a></li>
+                        </ul>
+                    </div>
+                </li>
 
-        <h1>The Troubles: El Conflicto en Derry</h1>
+                <li class="nav-item dropdown ms-lg-3">
+                    <div class="btn-group:hover btn-dark ">
+                        <a href="derry.html" class="btn btn-black text-white">
+                            Derry
+                        </a>
+                        <button type="button" 
+                                class="btn btn-black text-white dropdown-toggle dropdown-toggle-split" 
+                                data-bs-toggle="dropdown" 
+                                aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
 
-        <p>Derry (oficialmente Londonderry) fue uno de los epicentros de The Troubles, un periodo de conflicto etno-nacionalista que marcó la historia de Irlanda del Norte durante tres décadas, desde finales de los años 60 hasta la firma del Acuerdo de Viernes Santo en 1998.</p>
+                        <ul class="dropdown-menu dropdown-menu-dark text-center text-lg-start">
+                            <li><a class="dropdown-item" href="thetroubles.html">the troubles</a></li>
+                            <li><a class="dropdown-item" href="recetas.html">recetas</a></li>
 
+                        </ul>
+                    </div>
+                </li>
 
-        <div class="row p-5">
-        
-        <h2>Origen y Contexto</h2>
-
-        <p>El conflicto se originó por una profunda división política y religiosa:
-
-        Unionistas / Leales (mayoría protestante): Buscaban mantener a Irlanda del Norte dentro del Reino Unido.
-
-        Nacionalistas / Republicanos (mayoría católica): Aspiraban a que Irlanda del Norte se uniera a la República de Irlanda para formar una Irlanda unida.</p>
-        </div>
-
-        <div class="row p-5">
-            <h2>Derry: Ciudad Clave del Conflicto</h2>
-            <p>
-                Derry desempeñó un papel fundamental en el desarrollo de los eventos. Fue aquí donde el movimiento por los Derechos Civiles comenzó a ganar fuerza en 1968, denunciando la discriminación hacia la población católica en el acceso a la vivienda y el empleo.
-            </p> <br> <p>Algunos hitos históricos en la ciudad fueron:</p>
-
-            <ul>
-                <li>La Batalla del Bogside (1969): Un enfrentamiento masivo entre residentes del barrio nacionalista y la policía (RUC), que llevó al despliegue del ejército británico en las calles.</li>
-                <li>Bloody Sunday (Domingo Sangriento, 1972): Un evento trágico donde paracaidistas británicos dispararon contra manifestantes desarmados en Derry, matando a 14 personas. Este suceso radicalizó el conflicto a nivel internacional.</li>
-                <li>Free Derry Corner: El icónico mural que marcaba una zona de autogobierno nacionalista y que hoy sigue siendo un símbolo de la resistencia y la historia de la ciudad.</li>
             </ul>
         </div>
-
-        <div class="col p-5">
-            <h2>La Histórica Visita de Bill Clinton (1995)</h2>
-            <p>El 30 de noviembre de 1995, Derry vivió uno de sus momentos más memorables fuera del contexto de la violencia: la visita de Bill Clinton, el primer presidente de los Estados Unidos en funciones que visitaba Irlanda del Norte.</p><br>
-
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/lbU1OnoSaiw?si=4oyIugmMlD0csMOJ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <h3>Importancia para el Proceso de Paz</h3>
-            <p>La llegada de Clinton no fue solo un acto diplomático, sino un respaldo crucial al incipiente proceso de paz. Su presencia simbolizaba que el mundo estaba observando y apoyando el fin de la lucha armada.</p>
-
-            <ul>
-                <li>El Discurso en el Guildhall: Ante una multitud masiva en la plaza del Guildhall, Clinton pronunció un discurso optimista. Se dirigió a los ciudadanos de Derry diciendo que eran "el futuro" y que la paz era posible.</li>
-                <li>John Hume: La visita fue gestionada en gran parte por John Hume, líder del SDLP y nativo de Derry (quien más tarde recibiría el Premio Nobel de la Paz), reforzando el papel de la ciudad como motor de cambio político.</li>
-                <li>Impacto Social: Para la población de Derry, la visita representó un "rayo de luz" tras años de oscuridad. Ver a un presidente estadounidense caminar por sus calles dio a los ciudadanos la sensación de que la normalidad y la reconciliación eran metas alcanzables.</li>
-            </ul>
-
-        </div>
-
     </div>
-</div>
+</nav>
 
+    <div class="container my-5 flex-grow-1">
+        <div class="row text-center p-5 pt-5 bg-white">
 
+            <h1>The Troubles: El Conflicto en Derry</h1>
+            <p>Derry (oficialmente Londonderry) fue uno de los epicentros de The Troubles, un periodo de conflicto etno-nacionalista que marcó la historia de Irlanda del Norte durante tres décadas, desde finales de los años 60 hasta la firma del Acuerdo de Viernes Santo en 1998.</p>
 
+            <div class="row ">
+                <h2>Origen y Contexto</h2>
+                <p>El conflicto se originó por una profunda división política y religiosa:
+                Unionistas / Leales (mayoría protestante): Buscaban mantener a Irlanda del Norte dentro del Reino Unido.
+                Nacionalistas / Republicanos (mayoría católica): Aspiraban a que Irlanda del Norte se uniera a la República de Irlanda para formar una Irlanda unida.</p>
+            </div>
 
-
-
-
-
-
-
-
-
-<footer class="y-4 p-2 bg-black text-white text-center mt-5 fixed-bottom">
-            <div class="container">
-                <p class="mb-0">Ludmila Ferrari - Informática General Drelichman - Final - 2026</p>
-                <ul class="list-unstyled">
-                    <li><a class="nav-link btn btn-primary text-white ms-lg-3" href="contacto.html">Sobre mi</a></li>
-                    <li><a class="nav-link btn btn-primary text-white ms-lg-3" href="contacto.html">Contacto</a></li>
+            <div class="row">
+                <h2>Derry: Ciudad Clave del Conflicto</h2>
+                <p>Derry desempeñó un papel fundamental en el desarrollo de los eventos. Fue aquí donde el movimiento por los Derechos Civiles comenzó a ganar fuerza en 1968, denunciando la discriminación hacia la población católica en el acceso a la vivienda y el empleo.</p>
+                <br> <p>Algunos hitos históricos en la ciudad fueron:</p>
+                <ul>
+                    <li>La Batalla del Bogside (1969): Un enfrentamiento masivo entre residentes del barrio nacionalista y la policía (RUC), que llevó al despliegue del ejército británico en las calles.</li>
+                    <li>Bloody Sunday (Domingo Sangriento, 1972): Un evento trágico donde paracaidistas británicos dispararon contra manifestantes desarmados en Derry, matando a 14 personas. Este suceso radicalizó el conflicto a nivel internacional.</li>
+                    <li>Free Derry Corner: El icónico mural que marcaba una zona de autogobierno nacionalista y que hoy sigue siendo un símbolo de la resistencia y la historia de la ciudad.</li>
                 </ul>
             </div>
-        </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+            <div class="col">
+                <h2>La Histórica Visita de Bill Clinton (1995)</h2>
+                <p>El 30 de noviembre de 1995, Derry vivió uno de sus momentos más memorables fuera del contexto de la violencia: la visita de Bill Clinton, el primer presidente de los Estados Unidos en funciones que visitaba Irlanda del Norte.</p><br>
+
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/lbU1OnoSaiw?si=4oyIugmMlD0csMOJ" title="YouTube video player" allowfullscreen></iframe>
+                </div>
+
+                <div class="p-5">
+                    <h3>Importancia para el Proceso de Paz</h3>
+                <p>La llegada de Clinton no fue solo un acto diplomático, sino un respaldo crucial al incipiente proceso de paz. Su presencia simbolizaba que el mundo estaba observando y apoyando el fin de la lucha armada.</p>
+
+                <ul>
+                    <li>El Discurso en el Guildhall: Ante una multitud masiva en la plaza del Guildhall, Clinton pronunció un discurso optimista. Se dirigió a los ciudadanos de Derry diciendo que eran "el futuro" y que la paz era posible.</li>
+                    <li>John Hume: La visita fue gestionada en gran parte por John Hume, líder del SDLP y nativo de Derry (quien más tarde recibiría el Premio Nobel de la Paz), reforzando el papel de la ciudad como motor de cambio político.</li>
+                    <li>Impacto Social: Para la población de Derry, la visita representó un "rayo de luz" tras años de oscuridad. Ver a un presidente estadounidense caminar por sus calles dio a los ciudadanos la sensación de que la normalidad y la reconciliación eran metas alcanzables.</li>
+                </ul>
+                </div>
+                
+            </div>
+
+            <div class="container"> 
+                <div class="row"> 
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <a class="mi-galeria-links galeria-miniatura" data-gall="gallery-A" href="/img/thetroubles1.jpg">
+                            <img src="/img/thetroubles1.jpg" alt="conflicto armado" class="img-fluid"> 
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <a class="mi-galeria-links galeria-miniatura" data-gall="gallery-A" href="/img/thetroubles2.jpg">
+                            <img src="/img/thetroubles2.jpg" alt="conflicto armado" class="img-fluid"> 
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <a class="mi-galeria-links galeria-miniatura" data-gall="gallery-A" href="/img/thetroubles3.jpg">
+                            <img src="/img/thetroubles3.jpg" alt="conflicto armado" class="img-fluid"> 
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <a class="mi-galeria-links galeria-miniatura" data-gall="gallery-A" href="/img/thetroubles4.jpg">
+                            <img src="/img/thetroubles4.jpg" alt="conflicto armado" class="img-fluid"> 
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <a class="mi-galeria-links galeria-miniatura" data-gall="gallery-A" href="/img/thetroubles5.jpg">
+                            <img src="/img/thetroubles5.jpg" alt="conflicto armado" class="img-fluid"> 
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <a class="mi-galeria-links galeria-miniatura" data-gall="gallery-A" href="/img/thetroubles6.jpg">
+                            <img src="/img/thetroubles6.jpg" alt="conflicto armado" class="img-fluid"> 
+                        </a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <footer class="y-4 p-2 bg-black text-white text-center mt-auto">
+        <div class="container">
+            <p class="mb-0">Ludmila Ferrari - Informática General Drelichman - Final - 2026</p>
+            <ul class="list-unstyled">
+                <li><a class="nav-link btn btn-primary text-white ms-lg-3 my-1" href="about.html">Sobre mi</a></li>
+                <li><a class="nav-link btn btn-primary text-white ms-lg-3 my-1" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="/venobox/venobox.min.js"></script>
+    <script src="/js/galeria.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

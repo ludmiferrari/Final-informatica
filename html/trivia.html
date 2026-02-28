@@ -1,15 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/styles.css">
-    <title>about</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Trivia</title>
 </head>
-<body class="fondoabout d-flex flex-column min-vh-100">
+<body class="fondotrivia d-flex flex-column min-vh-100">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
     <div class="container">
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,38 +85,58 @@
     </div>
 </nav>
 
-    <div class="d-flex justify-content-center align-items-center vh-100">
+<main class="flex-grow-1 container py-5">
+    <div class="text-center mb-4">
+        <h1 class="display-4 fw-bold text-primary">Derry Girls Quiz</h1>
+        <div class="h5">Puntaje: <span id="puntaje-jugador" class="badge bg-primary">0</span></div>
+    </div>
 
-
-
-    <div class="card mb-3 w-50 bg-transparent mt-4 border-0">
-        <div class="row g-0 align-items-center">
-            <div class="col-md-4 pp">
-                <img src="/img/ludmilapp.png" class="img-fluid rounded-start" alt="foto de perfil desarrolladora">
-            </div>
-            <div class="col-md-8">
-                <div class="texto card-body m-4 bg-white bg-opacity-50 rounded-4">
-                    <h1 class="card-title">Hola!</h1>
-                    <p class="card-text">
-                        Mi nombre es Ludmila. Soy alumna de la carrera de Artes Multimediales en la UNA - Universidad Nacional de las Artes.
-                        Este sitio web fue realizado como examen final para la materia Informática General - Catedra Drelichman - 2026
-                    </p>
+    <div class="row justify-content-center mb-5">
+        <div class="col-md-8">
+            <div class="card shadow border-0 rounded-4 bg-white">
+                <div class="card-body p-5 text-center">
+                    <h2 id="frase-texto" class="display-6 fst-italic">Presiona "Jugar" para empezar</h2>
                 </div>
             </div>
         </div>
     </div>
-</div>
-    
-        <footer class="y-4 p-2 bg-black text-white text-center mt-5 mt-4 ">
-            <div class="container">
-                <p class="mb-0">Ludmila Ferrari - Informática General Drelichman - final - 2026</p>
-                <ul class="list-unstyled">
-                    <li><a class="nav-link btn btn-primary text-white ms-lg-3" href="about.html">Sobre mi</a></li>
-                    <li><a class="nav-link btn btn-primary text-white ms-lg-3" href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-        </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <div class="row justify-content-center g-4">
+        <div class="col-6 col-md-4">
+            <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                <div class="cartaJugador1 ratio ratio-1x1 bg-light border-bottom" style="background-size: cover; background-position: center; cursor: pointer;"></div>
+                <div class="card-body text-center py-2 bg-white">
+                    <h3 id="nombre-0" class="m-0 fw-bold text-primary">Personaje A</h3>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-md-4">
+            <div class="card h-100 border-0 shadow-sm overflow-hidden">
+                <div class="cartaJugador2 ratio ratio-1x1 bg-light border-bottom" style="background-size: cover; background-position: center; cursor: pointer;"></div>
+                <div class="card-body text-center py-2 bg-white">
+                    <h3 id="nombre-1" class="m-0 fw-bold text-primary">Personaje B</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-5">
+        <button id="boton-jugar" class="btn btn-primary btn-lg px-5 shadow rounded-pill">¡JUGAR!</button>
+        <button id="boton-reiniciar" class="btn btn-outline-secondary btn-lg ms-2 rounded-pill" disabled>Reiniciar</button>
+    </div>
+</main>
+
+<footer class="bg-black text-white text-center py-4 mt-auto">
+    <div class="container">
+        <p class="mb-0">Ludmila Ferrari - Informática General Drelichman - Final - 2026</p>
+        <div class="d-flex justify-content-center gap-3">
+            <a class="text-white text-decoration-none" href="about.html">Sobre mi</a>
+            <a class="text-white text-decoration-none" href="contacto.html">Contacto</a>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/trivia.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

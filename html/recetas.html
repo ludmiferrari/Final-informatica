@@ -1,14 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/styles.css">
-    <title>playlis</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>recetas</title>
 </head>
-<body class="musicafondo">
+<body class="fondorecetas d-flex flex-column min-vh-100">
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-black">
     <div class="container">
@@ -86,80 +85,81 @@
     </div>
 </nav>
 
-<div class="container mt-5">
-
-    <div class="row gx-5 g-0"> 
-        
-        <div class="col-lg-6 col-12 my-4 px-3">
-            <div class="p-3 bg-transparent rounded-3">
-                <p class="text-white text-center fs-4 py-3">
-                    “Dreams” - The Cranberries
-                </p>
-                <div class="colaboraciones-spotify"> 
-                    <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/track/4JGKZS7h4Qa16gOU3oNETV?utm_source=generator" height="352"  allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-            </div>
+<main class="container py-4 mt-5 mb-5 bg-white flex-grow-1">
+    <div class="row text-center mb-5">
+        <div class="col-12 text-black">
+            <h1>The Derry Cookbook</h1>
         </div>
-
-        <div class="col-lg-6 col-12 my-4 px-3">
-            <div class="p-3 bg-transparent rounded-3">
-                <p class="text-white text-center fs-4 py-3">
-                    Zombie” - The Cranberries
-                </p>
-                <div class="colaboraciones-spotify"> 
-                    <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/track/49wOjOkS4pBK3PQnPnNYjb?utm_source=generator" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-lg-6 col-12 my-4 px-3">
-            <div class="p-3 bg-transparent rounded-3">
-                <p class="text-white text-center fs-4 py-3">
-                    “Le Freak” - CHIC
-                </p>
-                <div class="colaboraciones-spotify"> 
-                    <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/track/2Znta32gZvOyF5cQn4seTU?utm_source=generator" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-lg-6 col-12 my-4 px-3">
-            <div class="p-3 bg-transparent rounded-3">
-                <p class="text-white text-center fs-4 py-3">
-                    “Dancing with myself” - Billy Idol, Generation X
-                </p>
-                <div class="colaboraciones-spotify"> 
-                    <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/track/7fJnj6rso7N95oztvsxrWD?utm_source=generator" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-lg-6 col-12 my-4 px-3">
-            <div class="p-3 bg-transparent rounded-3">
-                <p class="text-white text-center fs-4 py-3">
-                    “Like a Prayer” - Madonna
-                </p>
-                <div class="colaboraciones-spotify"> 
-                    <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/track/1z3ugFmUKoCzGsI6jdY4Ci?utm_source=generator" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-lg-6 col-12 my-4 px-3">
-            <div class="p-3 bg-transparent rounded-3">
-                <p class="text-white text-center fs-4 py-3">
-                    “Girls & Boys” - Blur
-                </p>
-                <div class="colaboraciones-spotify"> 
-                    <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/track/5CeL9C3bsoe4yzYS1Qz8cw?utm_source=generator" height="352" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
-        
     </div>
 
-</div>
-    
+    <div class="row g-4 justify-content-center">
+        
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border-secondary">
+                <div class="p-3">
+                    <span class="badge rounded-pill bg-success mb-2">Desayuno de Mary</span>
+                    <h2 class="card-title fw-bold">Irish Soda Bread</h2>
+                    <p>El pan que sobrevive a los Troubles.</p>
+                </div>
+                <div class="card-body pt-0 text-center">
+                    <div class="rounded p-3 mb-3">
+                        <h3 class="text-uppercase small fw-bold">Ingredientes Clave</h3>
+                        <ul class="list-unstyled mb-0">
+                            <li>🥖 Harina de trigo integral</li>
+                            <li>🥛 Buttermilk (Suero de leche)</li>
+                            <li>🧂 Bicarbonato de Sodio</li>
+                        </ul>
+                    </div>
+                    <p >Es el pan denso y sin levadura que nunca falta en la mesa de los Quinn. Ideal para acompañar con té mientras Gerry y Joe pelean.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border-secondary">
+                <div class="p-3">
+                    <span class="badge rounded-pill bg-danger mb-2">Favorito de Pump Street</span>
+                    <h2 class="card-title fw-bold">Cream Horns</h2>
+                    <p>El tesoro de Dennis's Wee Shop.</p>
+                </div>
+                <div class="card-body pt-0 text-center">
+                    <div class="p-3 mb-3 ">
+                        <h3 class="text-uppercase small fw-bold">El Secreto Dulce</h3>
+                        <ul class="list-unstyled mb-0">
+                            <li>🥐 Hojaldre súper crocante</li>
+                            <li>🍦 Crema batida doble</li>
+                            <li>🍓 Mermelada de fresa</li>
+                        </ul>
+                    </div>
+                    <p>Icónico dulce de Derry. Las chicas suelen comprarlos en la famosa Pump Street antes de meterse en problemas.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <div class="card h-100 border-secondary">
+                <div class="p-3">
+                    <span class="badge rounded-pill bg-primary mb-2">Comida de Viernes</span>
+                    <h2 class="card-title fw-bold">Chips & Curry Sauce</h2>
+                    <p>La cena del Fionnula's Chippy.</p>
+                </div>
+                <div class="card-body pt-0 text-center">
+                    <div class="p-3 mb-3">
+                        <h3 class="text-uppercase small fw-bold">Combo Perfecto</h3>
+                        <ul class="list-unstyled mb-0">
+                            <li>🍟 Papas cortadas a mano</li>
+                            <li>🍛 Salsa de curry estilo Irish</li>
+                            <li>🥤 Una Coca-Cola bien fría</li>
+                        </ul>
+                    </div>
+                    <p class="card-text small">No hay nada más Derry que unas papas fritas con salsa de curry después de un largo día de colegio en Our Lady Immaculate.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
 <footer class="y-4 p-2 bg-black text-white text-center mt-5 ">
             <div class="container">
                 <p class="mb-0">Ludmila Ferrari - Informática General Drelichman - Final - 2026</p>
@@ -170,6 +170,6 @@
             </div>
         </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -12,8 +12,29 @@ html, body {
     min-height: 100vh; 
 }
 
+.fondoderry{
+    background-image: url(/img/derryfondo.jpg);
+}
+
+.personajesfondo{
+    background-image: url(/img/personajesfondo.png);
+}
+
+.bgpremios{
+    background-color: blueviolet;
+}
+
 .fondoabout{
     background-image: url(/img/fondoabout.png);
+
+}
+
+.fondoepisodios{
+    background-image: url(/img/episodiosfondo.png);
+}
+
+.fondorecetas{
+    background-image: url(/img/fondorecetas.jpg);
 
 }
 
@@ -24,6 +45,25 @@ html, body {
     background-attachment: fixed; 
     background-position: center; 
     min-height: 100vh; 
+}
+
+.fondotrivia{
+    background-image: url(/img/play.png);
+
+}
+
+.elencofondo{
+    background-image: url(/img/elencofondo.png);
+
+}
+
+.fondorecurrentes{
+    background-image: url(/img/recurrentesfondo.png);
+}
+
+.fondoprincipales{
+    background-image: url(/img/cc126b6b410e330e1f2665bf2fc0bc38.jpg);
+
 }
 
 .fondo-imagen{
@@ -41,6 +81,15 @@ html, body {
     }
 }
 
+.fondothetroubles{
+    background-image: url(/img/fondothetroubles.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+    min-height: 100vh;
+}
+
 .contactofondo {
     background-image: url(/img/ffondo.jpg);
     background-size: cover; 
@@ -48,6 +97,13 @@ html, body {
     background-attachment: fixed; 
     background-position: center; 
     min-height: 100vh;
+}
+
+@media (max-width: 430px) {
+    .contactofondo {
+        background-image: url(/img/contactofondo.png);
+    
+    }
 }
 
 
@@ -82,4 +138,12 @@ html, body {
 
 .galeria-miniatura:hover img {
     transform: scale(1.05);
+}
+
+
+/*CARDS-----------------------------------------------------------------------*/
+
+.card {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }

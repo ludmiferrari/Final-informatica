@@ -11,65 +11,81 @@
 </head>
 <body class="fanartfondo">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-        <div class="container">
-            <a  class="navbar-brand"></a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-            </button>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto"> 
-                <li class="nav-item">
-                <a class="nav-link btn btn-primary text-white ms-lg-3" href="index.html">Inicio</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-center align-items-center">
+                
+                <li class="nav-item mb-2 mb-lg-0">
+                    <a class="nav-link btn btn-dark text-white ms-lg-3" href="index.html">Inicio</a>
                 </li>
-                <li class="nav-item">
-                <a class="nav-link btn btn-primary text-white ms-lg-3" href="playlist.html">Playlist</a>
+                
+                <li class="nav-item mb-2 mb-lg-0">
+                    <a class="nav-link btn btn-dark text-white ms-lg-3" href="playlist.html">Playlist</a>
                 </li>
-                <li class="nav-item">
-                <a class="nav-link btn btn-primary text-white ms-lg-3" href="thetroubles.html">The troubles</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link btn btn-primary text-white ms-lg-3" href="fanart.html">Fanart</a>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link btn btn-primary text-white ms-lg-3" href="galeria.html"></a>
+                
+                <li class="nav-item mb-2 mb-lg-0">
+                    <a class="nav-link btn btn-dark text-white ms-lg-3" href="capitulos.html">capitulos</a>
                 </li>
 
-                <li class="nav-item">
-                <a class="nav-link btn btn-primary text-white ms-lg-3" href="fanart.html">Fan Art</a>
+                <li class="nav-item mb-2 mb-lg-0">
+                    <a class="nav-link btn btn-dark text-white ms-lg-3" href="trivia.html">trivia</a>
                 </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle btn btn-primary text-white ms-lg-3" 
-                    href="musica.html" 
-                    id="navbarDropdownProyectos" 
-                    role="button" 
-                    data-bs-toggle="dropdown" 
-                    >
-                        musica
-                    </a>
-                    
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownProyectos">
-
-                        <li><a class="dropdown-item" href="musica.html"></a></li>
-                        
-                        <li><a class="dropdown-item" href="colaboraciones.html"></a></li>
-                        
-                        <li><a class="dropdown-item" href="listeningparty.html"></a></li>
-                        
-                    </ul>
+                <li class="nav-item mb-2 mb-lg-0">
+                    <a class="nav-link btn btn-dark text-white ms-lg-3" href="premios.html">premios</a>
                 </li>
+
+                <li class="nav-item dropdown ms-lg-3">
+                    <div class="btn-group:hover btn-dark ">
+                        <a href="personajes.html" class="btn btn-black text-white">
+                            personajes
+                        </a>
+                        <button type="button" 
+                                class="btn btn-black text-white dropdown-toggle dropdown-toggle-split" 
+                                data-bs-toggle="dropdown" 
+                                aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+
+                        <ul class="dropdown-menu dropdown-menu-dark text-center text-lg-start">
+                            <li><a class="dropdown-item" href="principales.html">Protagonistas</a></li>
+                            <li><a class="dropdown-item" href="recurrentes.html">Recurrentes</a></li>
+                            <li><a class="dropdown-item" href="elenco.html">Elenco</a></li>
+                            <li><a class="dropdown-item" href="fanart.html">fanart</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown ms-lg-3">
+                    <div class="btn-group:hover btn-dark ">
+                        <a href="derry.html" class="btn btn-black text-white">
+                            Derry
+                        </a>
+                        <button type="button" 
+                                class="btn btn-black text-white dropdown-toggle dropdown-toggle-split" 
+                                data-bs-toggle="dropdown" 
+                                aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+
+                        <ul class="dropdown-menu dropdown-menu-dark text-center text-lg-start">
+                            <li><a class="dropdown-item" href="thetroubles.html">the troubles</a></li>
+                            <li><a class="dropdown-item" href="recetas.html">recetas</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+
             </ul>
-            </div>
         </div>
-    </nav>
-
-    <h1 class="mb-5 display-4 text-center pb-2 titulo-custome">
-        FAN ART
-    </h1>
+    </div>
+</nav>
 
     <div class="container mt-5"> 
     
@@ -142,8 +158,8 @@
             </div>
         </footer>
 
-    <script type="text/javascript" src="/venobox/venobox.min.js"></script>
-    <script type="text/javascript" src="/js/galeria.js"></script>
+    <script src="/venobox/venobox.min.js"></script>
+    <script src="/js/galeria.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

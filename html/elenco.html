@@ -7,96 +7,196 @@
     <link rel="stylesheet" href="../css/styles.css">
     <title>elenco</title>
 </head>
-<body class="fondo-imagen">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-        <div class="container">
-            <a  class="navbar-brand"></a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<body class="elencofondo d-flex flex-column min-vh-100">
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-            </button>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto"> 
-                <li class="nav-item">
-                <a class="nav-link btn btn-primary text-white ms-lg-3" href="index.html">Inicio</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto text-center align-items-center">
+                
+                <li class="nav-item mb-2 mb-lg-0">
+                    <a class="nav-link btn btn-dark text-white ms-lg-3" href="index.html">Inicio</a>
                 </li>
-                <li class="nav-item">
-                <a class="nav-link btn btn-primary text-white ms-lg-3" href="playlist.html">Playlist</a>
+                
+                <li class="nav-item mb-2 mb-lg-0">
+                    <a class="nav-link btn btn-dark text-white ms-lg-3" href="playlist.html">Playlist</a>
                 </li>
-                <li class="nav-item">
-                <a class="nav-link btn btn-primary text-white ms-lg-3" href="thetroubles.html">The troubles</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link btn btn-primary text-white ms-lg-3" href="fanart.html">Fanart</a>
-                </li>
-
-                <li class="nav-item">
-                <a class="nav-link btn btn-primary text-white ms-lg-3" href="elenco.html">elenco</a>
+                
+                <li class="nav-item mb-2 mb-lg-0">
+                    <a class="nav-link btn btn-dark text-white ms-lg-3" href="capitulos.html">capitulos</a>
                 </li>
 
-                <li class="nav-item">
-                <a class="nav-link btn btn-primary text-white ms-lg-3" href="fanart.html">Fan Art</a>
+                <li class="nav-item mb-2 mb-lg-0">
+                    <a class="nav-link btn btn-dark text-white ms-lg-3" href="trivia.html">trivia</a>
                 </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle btn btn-primary text-white ms-lg-3" 
-                    href="personajes.html" 
-                    id="navbarDropdownProyectos" 
-                    role="button" 
-                    data-bs-toggle="dropdown" 
-                    >
-                        personajes
-                    </a>
-                    
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownProyectos">
-
-                        <li><a class="dropdown-item" href="musica.html">erin</a></li>
-                        
-                        <li><a class="dropdown-item" href="colaboraciones.html">michelle</a></li>
-                        
-                        <li><a class="dropdown-item" href="listeningparty.html">orla</a></li>
-
-                        <li><a class="dropdown-item" href="listeningparty.html">claire</a></li>
-
-                        <li><a class="dropdown-item" href="listeningparty.html">james</a></li>
-
-                        <li><a class="dropdown-item" href="listeningparty.html">Hermana Michael</a></li>
-                        
-                    </ul>
+                <li class="nav-item mb-2 mb-lg-0">
+                    <a class="nav-link btn btn-dark text-white ms-lg-3" href="premios.html">premios</a>
                 </li>
+
+                <li class="nav-item dropdown ms-lg-3">
+                    <div class="btn-group:hover btn-dark ">
+                        <a href="personajes.html" class="btn btn-black text-white">
+                            personajes
+                        </a>
+                        <button type="button" 
+                                class="btn btn-black text-white dropdown-toggle dropdown-toggle-split" 
+                                data-bs-toggle="dropdown" 
+                                aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+
+                        <ul class="dropdown-menu dropdown-menu-dark text-center text-lg-start">
+                            <li><a class="dropdown-item" href="principales.html">Protagonistas</a></li>
+                            <li><a class="dropdown-item" href="recurrentes.html">Recurrentes</a></li>
+                            <li><a class="dropdown-item" href="elenco.html">Elenco</a></li>
+                            <li><a class="dropdown-item" href="fanart.html">fanart</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown ms-lg-3">
+                    <div class="btn-group:hover btn-dark ">
+                        <a href="derry.html" class="btn btn-black text-white">
+                            Derry
+                        </a>
+                        <button type="button" 
+                                class="btn btn-black text-white dropdown-toggle dropdown-toggle-split" 
+                                data-bs-toggle="dropdown" 
+                                aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+
+                        <ul class="dropdown-menu dropdown-menu-dark text-center text-lg-start">
+                            <li><a class="dropdown-item" href="thetroubles.html">the troubles</a></li>
+                            <li><a class="dropdown-item" href="recetas.html">recetas</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+
             </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="flex-grow-1 container my-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        
+        <div class="col">
+            <div class="card bg-transparent border-0 shadow-lg">
+                <div class="row g-0 align-items-center bg-white rounded-4 p-4">
+                    <div class="col-6">
+                        <img src="/img/saoirsemonicajackson.png" class="img-fluid rounded-4 shadow-sm" alt="Saoirse-Monica Jackson">
+                    </div>
+                    <div class="col-6">
+                        <div class="card-body py-0 ps-4">
+                            <h5 class="card-title fs-3 fw-bold mb-1 text-dark">Saoirse-Monica Jackson</h5>
+                            <p class="card-text text-secondary fs-5 mb-0">Erin Quinn</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
 
-<div class="conteiner-md">
-        <div class="row  text-center">
-    <div class="col p-5">
-      
+        <div class="col">
+            <div class="card h-100 bg-transparent border-0 shadow-lg">
+                <div class="row g-0 align-items-center bg-white rounded-4 p-4 border border-light">
+                    <div class="col-6">
+                        <img src="/img/louisaharland.png" class="img-fluid rounded-4 shadow-sm" alt="Louisa Harland">
+                    </div>
+                    <div class="col-6">
+                        <div class="card-body py-0 ps-4">
+                            <h5 class="card-title fs-3 fw-bold mb-1 text-dark">Louisa Harland</h5>
+                            <p class="card-text text-secondary fs-5 mb-0">Orla McCool</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 bg-transparent border-0 shadow-lg">
+                <div class="row g-0 align-items-center bg-white rounded-4 p-4 border border-light">
+                    <div class="col-6">
+                        <img src="/img/nicola.png" class="img-fluid rounded-4 shadow-sm" alt="Nicola Coughlan">
+                    </div>
+                    <div class="col-6">
+                        <div class="card-body py-0 ps-4">
+                            <h5 class="card-title fs-3 fw-bold mb-1 text-dark">Nicola Coughlan</h5>
+                            <p class="card-text text-secondary fs-5 mb-0">Clare Devlin</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 bg-transparent border-0 shadow-lg">
+                <div class="row g-0 align-items-center bg-white rounded-4 p-4 border border-light">
+                    <div class="col-6">
+                        <img src="/img/jamielee.png" class="img-fluid rounded-4 shadow-sm" alt="Jamie-Lee O'Donnell">
+                    </div>
+                    <div class="col-6">
+                        <div class="card-body py-0 ps-4">
+                            <h5 class="card-title fs-3 fw-bold mb-1 text-dark">Jamie-Lee O'Donnell</h5>
+                            <p class="card-text text-secondary fs-5 mb-0">Michelle Mallon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 bg-transparent border-0 shadow-lg">
+                <div class="row g-0 align-items-center bg-white rounded-4 p-4 border border-light">
+                    <div class="col-6">
+                        <img src="/img/dylan.png" class="img-fluid rounded-4 shadow-sm" alt="Dylan Llewellyn">
+                    </div>
+                    <div class="col-6">
+                        <div class="card-body py-0 ps-4">
+                            <h5 class="card-title fs-3 fw-bold mb-1 text-dark">Dylan Llewellyn</h5>
+                            <p class="card-text text-secondary fs-5 mb-0">James Maguire</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card h-100 bg-transparent border-0 shadow-lg">
+                <div class="row g-0 align-items-center bg-white rounded-4 p-4 border border-light">
+                    <div class="col-6">
+                        <img src="/img/leah.png" class="img-fluid rounded-4 shadow-sm" alt="Siobhán McSweeney">
+                    </div>
+                    <div class="col-6">
+                        <div class="card-body py-0 ps-4">
+                            <h5 class="card-title fs-3 fw-bold mb-1 text-dark">Leah O'Rourke</h5>
+                            <p class="card-text text-secondary fs-5 mb-0">Jenny Joyce</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-</div>
+</main>
 
 
 
-
-
-
-
-
-
-
-
-
-<footer class="y-4 p-2 bg-black text-white text-center mt-5 fixed-bottom">
-            <div class="container">
+<footer class="bg-black text-white text-center py-4 mt-auto">
+        <div class="container">
                 <p class="mb-0">Ludmila Ferrari - Informática General Drelichman - Final - 2026</p>
                 <ul class="list-unstyled">
                     <li><a class="nav-link btn btn-primary text-white ms-lg-3" href="about.html">Sobre mi</a></li>
                     <li><a class="nav-link btn btn-primary text-white ms-lg-3" href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
-        </footer>
+    </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
