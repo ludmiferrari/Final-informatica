@@ -1,5 +1,5 @@
 let mazo = [
-    {   
+    { 
         frase: "Llegar tarde por un asesinato no es excusa.", 
         autor: "Hermana Michael", 
         imagen: "../img/hermanamichael.jpg" 
@@ -64,7 +64,7 @@ let mazo = [
 let indiceMazo = 0;
 let puntosJugador = 0;
 
-// Referencias al DOM con querySelector
+//DOM
 const cartaJ1 = document.querySelector('.cartaJugador1');
 const cartaJ2 = document.querySelector('.cartaJugador2');
 const reiniciar = document.querySelector('#boton-reiniciar');
@@ -75,40 +75,36 @@ const nombre0 = document.querySelector('#nombre-0');
 const nombre1 = document.querySelector('#nombre-1');
 
 function iniciarRonda() {
-    // Si se acaban las frases, volvemos a empezar
+    // Si se acaban las frases o reiniciamos, mezclamos el mazo
     if (indiceMazo >= mazo.length) {
         indiceMazo = 0;
-        mazo.sort(() => Math.random() - 0.5); // Mezclamos el mazo al reiniciar
+        mazo.sort(() => Math.random() - 0.5); 
     }
 
     let actual = mazo[indiceMazo];
     fraseDisplay.innerText = `"${actual.frase}"`;
-    
-    // --- SOLUCIÓN AL PROBLEMA DE LA HERMANA MICHAEL ---
-    // Filtramos todos los personajes que NO son el autor correcto
+
+    // Filtro para que la opción incorrecta no sea el mismo autor
     let posiblesIncorrectos = mazo.filter(m => m.autor !== actual.autor);
-    
-    // Elegimos uno de esos de forma aleatoria
     let incorrecto = posiblesIncorrectos[Math.floor(Math.random() * posiblesIncorrectos.length)];
     
-    // Mezclamos las dos opciones (correcta e incorrecta)
+    // Mezclar las dos opciones para que la correcta no esté siempre en el mismo lado
     let opciones = [actual, incorrecto].sort(() => Math.random() - 0.5);
 
-    // Renderizar tarjeta 1
+    // mostar tarjetas con imágenes y nombres
     cartaJ1.style.backgroundImage = `url('${opciones[0].imagen}')`;
     cartaJ1.dataset.autor = opciones[0].autor;
     nombre0.innerText = opciones[0].autor;
 
-    // Renderizar tarjeta 2
     cartaJ2.style.backgroundImage = `url('${opciones[1].imagen}')`;
     cartaJ2.dataset.autor = opciones[1].autor;
     nombre1.innerText = opciones[1].autor;
 
-    botonJugar.innerText = "Siguiente frase";
+    // Ocultamos el botón de jugar una vez que ya empezó la partida
+    botonJugar.style.display = "none";
 }
 
 function verificarRespuesta(indice) {
-    // Evita errores si hacen clic antes de empezar
     if (!fraseDisplay.innerText.includes('"')) return;
 
     let autorCorrecto = mazo[indiceMazo].autor;
@@ -117,18 +113,21 @@ function verificarRespuesta(indice) {
     if (autorSeleccionado === autorCorrecto) {
         puntosJugador++;
         puntajeJugador.innerText = puntosJugador;
-        indiceMazo++; // Pasamos a la siguiente frase del mazo
+        indiceMazo++; 
         
         if (puntosJugador >= 5) {
-            alert("¡Felicidades! Eres una verdadera Derry Girl. 🇮🇪");
-            reiniciar.disabled = false;
-            botonJugar.disabled = true;
+            alert("¡Felicidades! Eres una verdadera Derry Girl.");
+            
+            //Mostramos Reiniciar y bloqueamos clics en las cartas
+            reiniciar.classList.remove('d-none');
+            reiniciar.disabled = false; 
+            cartaJ1.style.pointerEvents = "none";
+            cartaJ2.style.pointerEvents = "none";
         } else {
-            iniciarRonda(); // Siguiente frase sin alert
+            iniciarRonda(); 
         }
     } else {
         alert("¡Error! Madre de Dios... 🤦‍♀️");
-        // No sumamos puntos ni avanzamos el índice para que lo intente de nuevo
     }
 }
 
@@ -138,5 +137,5 @@ reiniciar.addEventListener("click", () => location.reload());
 cartaJ1.addEventListener('click', () => verificarRespuesta(0));
 cartaJ2.addEventListener('click', () => verificarRespuesta(1));
 
-// Mezcla el mazo completo apenas carga el juego
+// Mezcla inicial al cargar la página
 mazo.sort(() => Math.random() - 0.5);
