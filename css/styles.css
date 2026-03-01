@@ -4,7 +4,7 @@ html, body {
 }
 
 .musicafondo{
-    background-image: url(/img/musicafondo.jpg);
+    background-image: url(../img/musicafondo.jpg);
     background-size: cover; 
     background-repeat: no-repeat; 
     background-attachment: fixed; 
@@ -13,33 +13,33 @@ html, body {
 }
 
 .fondoderry{
-    background-image: url(/img/derryfondo.jpg);
+    background-image: url(../img/derryfondo.jpg);
 }
 
 .personajesfondo{
-    background-image: url(/img/personajesfondo.png);
+    background-image: url(../img/personajesfondo.png);
 }
 
 .bgpremios{
-    background-image: url(/img/premiosfondo.jpg);
+    background-image: url(../img/premiosfondo.jpg);
 }
 
 .fondoabout{
-    background-image: url(/img/fondoabout.png);
+    background-image: url(../img/fondoabout.png);
 
 }
 
 .fondoepisodios{
-    background-image: url(/img/episodiosfondo.png);
+    background-image: url(../img/episodiosfondo.png);
 }
 
 .fondorecetas{
-    background-image: url(/img/fondorecetas.jpg);
+    background-image: url(../img/fondorecetas.jpg);
 
 }
 
 .fanartfondo{
-    background-image: url(/img/fanartfondo.jpg);
+    background-image: url(../img/fanartfondo.jpg);
     background-size: cover; 
     background-repeat: no-repeat; 
     background-attachment: fixed; 
@@ -48,26 +48,26 @@ html, body {
 }
 
 .fondotrivia{
-    background-image: url(/img/play.png);
+    background-image: url(../img/play.png);
 
 }
 
 .elencofondo{
-    background-image: url(/img/elencofondo.png);
+    background-image: url(../img/elencofondo.png);
 
 }
 
 .fondorecurrentes{
-    background-image: url(/img/recurrentesfondo.png);
+    background-image: url(../img/recurrentesfondo.png);
 }
 
 .fondoprincipales{
-    background-image: url(/img/principalesfondo.jpg);
+    background-image: url(../img/principalesfondo.jpg);
 
 }
 
 .fondo-imagen{
-    background-image: url(/img/tv4.png);
+    background-image: url(img/tv4.png);
     background-size: cover; 
     background-repeat: no-repeat; 
     background-attachment: fixed; 
@@ -76,22 +76,14 @@ html, body {
 }
 @media (max-width: 430px) {
     .fondo-imagen {
-        background-image: url(/img/tv5.png);
+        background-image: url(img/tv5.png);
     
     }
 }
 
-.fondothetroubles{
-    background-image: url(/img/fondothetroubles.jpg);
-    background-size: cover; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
-    background-position: center; 
-    min-height: 100vh;
-}
 
 .contactofondo {
-    background-image: url(/img/ffondo.jpg);
+    background-image: url(../img/ffondo.jpg);
     background-size: cover; 
     background-repeat: no-repeat; 
     background-attachment: fixed; 
@@ -101,7 +93,7 @@ html, body {
 
 @media (max-width: 430px) {
     .contactofondo {
-        background-image: url(/img/contactofondo.png);
+        background-image: url(../img/contactofondo.png);
     
     }
 }
