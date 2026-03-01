@@ -21,7 +21,7 @@ html, body {
 }
 
 .bgpremios{
-    background-color: blueviolet;
+    background-image: url(/img/premiosfondo.jpg);
 }
 
 .fondoabout{
@@ -62,7 +62,7 @@ html, body {
 }
 
 .fondoprincipales{
-    background-image: url(/img/cc126b6b410e330e1f2665bf2fc0bc38.jpg);
+    background-image: url(/img/principalesfondo.jpg);
 
 }
 
