@@ -67,7 +67,7 @@ html, body {
 }
 
 .fondo-imagen{
-    background-image: url(../img/tv4.png);
+    background-image: url(../img/tvgrande.png);
     background-size: cover; 
     background-repeat: no-repeat; 
     background-attachment: fixed; 
@@ -76,7 +76,7 @@ html, body {
 }
 @media (max-width: 430px) {
     .fondo-imagen {
-        background-image: url(../img/tv5.png);
+        background-image: url(../img/tvchica.png);
     
     }
 }
