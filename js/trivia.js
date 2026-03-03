@@ -128,8 +128,15 @@ function verificarRespuesta(indice) {
         }
     } else {
         alert("¡Error! Madre de Dios... 🤦‍♀️");
+
+        indiceMazo++;
+
+        
+        } else {
+            iniciarRonda(); // Cargamos la siguiente pregunta
+        }
     }
-}
+
 
 // Event Listeners
 botonJugar.addEventListener('click', iniciarRonda);
